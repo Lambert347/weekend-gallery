@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: #EBEBEB;
 }
 
 .App-header {
@@ -7,6 +8,7 @@
   padding: 1em;
   color: white;
   margin-bottom: 1em;
+  
 }
 
 .App-title {

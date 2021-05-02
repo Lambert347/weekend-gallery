@@ -1,0 +1,22 @@
+.card {
+    display: inline-block;
+    flex-wrap: wrap;
+    margin: 2rem;
+    background-color: #84A98C;
+    padding: 1rem;
+    text-align: center;
+    border: 1px #DCDCDC;
+    border-radius: 10px;
+    box-shadow: 10px 5px 5px #595959;
+    height: 250px;
+    width: 200px;
+    vertical-align: top;
+}
+div {
+    display: inline-block;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+}

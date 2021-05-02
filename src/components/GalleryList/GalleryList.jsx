@@ -1,12 +1,13 @@
-import GalleryItem from '../GalleryItem/GalleryItem'
+import GalleryItem from '../GalleryItem/GalleryItem';
+import './GalleryList.css';
 
-function GalleryList(props){
+
+function GalleryList({galleryList, getGallery}){
     return (
         <>
-        <h2>Gallery of My Life:</h2>
-        <div>
-            {props.list.map(item => 
-                (<GalleryItem key={item.id} item={item} />)
+        <div id="display">
+            {galleryList.map(item => 
+                (<GalleryItem key={item.id} item={item} getGallery={getGallery} />)
             )}
         </div>
         </>
