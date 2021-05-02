@@ -6,7 +6,7 @@ import GalleryItem from '../GalleryItem/GalleryItem';
 function GalleryList({galleryList, getGallery}){
     return (
         <>
-        <div id="display">
+        <div>
             {/* maps through the array, adding each item to the DOM */}
             {galleryList.map(item => 
             // brings in the gallery item component, gives each item in the array a unique key corresponding to the item.id from the server. 
