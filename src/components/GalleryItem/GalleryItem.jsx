@@ -21,16 +21,18 @@ function GalleryItem(props){
             <main>
                 {clicked ?
                 (
-                    <div onClick={ () => {setClicked(true)}}>
-                    {item.path}
-                    <button onClick={() => setLikes(like + 1)}></button>
-                    {likes &&
-                        renderMessage()
-                    }
-                    </div>
-            ) : (
                     <div onClick={ () => {setClicked(false)}}>
                         {item.description}
+                        {likes &&
+                            renderMessage()
+                        }
+                    </div>
+            
+            ) : (
+                    
+                    <div onClick={ () => {setClicked(true)}}>
+                        <img src={item.path}></img>
+                        <button onClick={() => setLikes(like + 1)}>Like</button>
                         {likes &&
                             renderMessage()
                         }
