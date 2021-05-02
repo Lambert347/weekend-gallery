@@ -24,7 +24,7 @@ function GalleryItem({item, getGallery}){
         if (item.likes >= 1 ){
             return(<p>This was liked by {item.likes} people!</p>);
         }
-        else {
+        else if (item.likes === 0) {
             return(<p>No likes yet!</p>);
         }
     }
